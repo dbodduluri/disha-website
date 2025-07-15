@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #fff0f5; /* light lavender background */
+    font-family: 'Courier New', monospace;
+    color: #2c003e; /* dark purple text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background: #f8b6d2; /* pink navbar */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px #888;
+  }
+  
+  nav a {
+    color: #2c003e;
+    background: #ffffff;
+    padding: 6px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 2px solid #8a6fbf;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background: #e7ccf9; /* soft purple on hover */
+    border-color: #b29dd9;
+  }
+  
+  .window {
+    background: #ffffff;
+    border: 4px ridge #b29dd9;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 8px #aaa;
+    border-radius: 10px;
+  }
+  
+  .window h1, .window h2 {
+    margin-top: 0;
+    border-bottom: 2px dashed #8a6fbf;
+    padding-bottom: 5px;
+    color: #8a6fbf;
+  }
+  
+  img.widget {
+    max-width: 100%;
+    border: 2px solid #8a6fbf;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+  
+  .footer-bar {
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 40px;
+    padding: 20px;
+    color: #2c003e;
+  }
+  
