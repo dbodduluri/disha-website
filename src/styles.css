@@ -1,64 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
 body {
-    background-color: #fff0f5; /* light lavender background */
-    font-family: 'Courier New', monospace;
-    color: #2c003e; /* dark purple text */
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #fff0f5; /* light lavender background */
+  font-family: 'Courier New', monospace;
+  color: #2c003e; /* dark purple text */
+  margin: 0;
+  padding: 0;
   
-  nav {
-    background: #f8b6d2; /* pink navbar */
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px #888;
+}
+
+/* Navigation Bar */
+nav {
+  background: #f8b6d2; /* pink navbar */
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px #888;
+}
+
+nav a {
+  color: #2c003e;
+  background: #ffffff;
+  padding: 6px 12px;
+  margin: 0 5px;
+  text-decoration: none;
+  border: 2px solid #8a6fbf;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #e7ccf9; /* soft purple on hover */
+  border-color: #b29dd9;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+footer img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/* Computer-style Full Screen Sections */
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Retro Computer Frame */
+.computer-frame {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  background: #111;
+  border: 8px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  position: relative;
+}
+
+/* Monitor Light Bar */
+.computer-frame::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 10px;
+  background: #4caf50;
+  border-radius: 4px;
+}
+
+/* Typing Animation (optional) */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #0f0;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  nav a {
-    color: #2c003e;
-    background: #ffffff;
-    padding: 6px 12px;
-    margin: 0 5px;
-    text-decoration: none;
-    border: 2px solid #8a6fbf;
-    border-radius: 4px;
-    font-weight: bold;
+  to {
+    width: 100%;
   }
-  
-  nav a:hover {
-    background: #e7ccf9; /* soft purple on hover */
-    border-color: #b29dd9;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
-  .window {
-    background: #ffffff;
-    border: 4px ridge #b29dd9;
-    max-width: 750px;
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 5px 5px 8px #aaa;
-    border-radius: 10px;
-  }
-  
-  .window h1, .window h2 {
-    margin-top: 0;
-    border-bottom: 2px dashed #8a6fbf;
-    padding-bottom: 5px;
-    color: #8a6fbf;
-  }
-  
-  img.widget {
-    max-width: 100%;
-    border: 2px solid #8a6fbf;
-    margin: 15px 0;
-    border-radius: 5px;
-  }
-  
-  .footer-bar {
-    text-align: center;
-    font-size: 0.85em;
-    margin-top: 40px;
-    padding: 20px;
-    color: #2c003e;
-  }
-  
+}
+
+/* Legacy Box (Optional: Replace with computer-frame) */
+.window {
+  background: #ffffff;
+  border: 4px ridge #b29dd9;
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 5px 5px 8px #aaa;
+  border-radius: 10px;
+}
+
+.window h1, .window h2 {
+  margin-top: 0;
+  border-bottom: 2px dashed #8a6fbf;
+  padding-bottom: 5px;
+  color: #8a6fbf;
+}
+
+img.widget {
+  max-width: 100%;
+  border: 2px solid #8a6fbf;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.footer-bar {
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 40px;
+  padding: 20px;
+  color: #2c003e;
+}
