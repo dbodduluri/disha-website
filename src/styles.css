@@ -1,77 +1,129 @@
-/* BASE STYLES */
 body {
-  background-color: #fff0f5;
+  background-color: #fff0f5; /* light lavender background */
   font-family: 'Courier New', monospace;
-  color: #2c003e;
+  color: #2c003e; /* dark purple text */
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* NAVIGATION */
 nav {
-  background: #f8b6d2;
-  padding: 10px;
+  background: #f8b6d2; /* pink navbar */
+  padding: 12px 0;
   text-align: center;
   box-shadow: 0 2px 5px #888;
+  font-size: 1.1rem;
 }
 
 nav a {
   color: #2c003e;
   background: #fff;
-  padding: 6px 12px;
-  margin: 0 5px;
+  padding: 8px 16px;
+  margin: 0 8px;
   text-decoration: none;
   border: 2px solid #8a6fbf;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 nav a:hover {
-  background: #e7ccf9;
+  background: #e7ccf9; /* soft purple on hover */
   border-color: #b29dd9;
 }
 
-/* COMPUTER WRAPPER */
-.computer-wrapper {
-  position: relative;
-  max-width: 1000px; /* Adjust based on your image size */
-  width: 90%;
+.window {
+  background: #ffffff;
+  border: 4px ridge #b29dd9;
+  max-width: 750px;
   margin: 40px auto;
-}
-
-/* IMAGE */
-.computer-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* SCREEN OVERLAY — positioned over the screen of vint.png */
-/* You will very likely need to tweak these values after you see it in the browser */
-.screen-overlay {
-  position: absolute;
-  top: 22%;     /* vertical offset of screen on your image */
-  left: 15%;    /* horizontal offset */
-  width: 70%;   /* width of screen area */
-  height: 55%;  /* height of screen area */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* CONTENT INSIDE SCREEN */
-.screen-content {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 240, 245, 0.85);
-  border-radius: 10px;
-  padding: 30px;
-  font-size: 1.4rem;
+  padding: 30px 40px;
+  box-shadow:
+    6px 6px 15px rgba(0, 0, 0, 0.15),
+    inset 0 0 12px #d9b8ff;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   color: #2c003e;
+  line-height: 1.6;
+  user-select: text;
+}
+
+.window h1,
+.window h2 {
+  margin-top: 0;
+  border-bottom: 2px dashed #8a6fbf;
+  padding-bottom: 8px;
+  color: #8a6fbf;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+/* Mini computer icon styling for inline SVG */
+.window h1 svg,
+.window h2 svg {
+  vertical-align: middle;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 1px #b29dd9);
+  transition: filter 0.3s ease;
+}
+
+.window h1 svg:hover,
+.window h2 svg:hover {
+  filter: drop-shadow(0 0 6px #b29dd9);
+  cursor: default;
+}
+
+/* Blinking cursor effect on headings */
+.window h1::after,
+.window h2::after {
+  content: '|';
+  animation: blink 1s step-start 0s infinite;
+  color: #8a6fbf;
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+img.widget {
+  max-width: 100%;
+  border: 2px solid #8a6fbf;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(138, 111, 191, 0.3);
+}
+
+/* Code snippet style */
+.code-snippet {
+  background: #f3e8ff;
+  border-left: 4px solid #8a6fbf;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  margin: 20px 0;
+  white-space: pre-wrap;
+  border-radius: 6px;
+  color: #2c003e;
+  box-shadow: inset 0 0 8px #d3b3ff;
+}
+
+.footer-bar {
   text-align: center;
-  box-shadow: inset 0 0 15px #b29dd9;
-  overflow: hidden; /* No scrolling */
+  font-size: 0.9em;
+  margin-top: 60px;
+  padding: 20px;
+  color: #2c003e;
+  letter-spacing: 0.04em;
+  font-style: italic;
+  opacity: 0.8;
+  user-select: none;
 }
