@@ -1,15 +1,15 @@
-/* GLOBAL BASE STYLES */
+/* BASE STYLES */
 body {
-  background-color: #fff0f5; /* light lavender background */
+  background-color: #fff0f5;
   font-family: 'Courier New', monospace;
-  color: #2c003e; /* dark purple text */
+  color: #2c003e;
   margin: 0;
   padding: 0;
 }
 
 /* NAVIGATION */
 nav {
-  background: #f8b6d2; /* pink navbar */
+  background: #f8b6d2;
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 5px #888;
@@ -17,7 +17,7 @@ nav {
 
 nav a {
   color: #2c003e;
-  background: #ffffff;
+  background: #fff;
   padding: 6px 12px;
   margin: 0 5px;
   text-decoration: none;
@@ -27,71 +27,51 @@ nav a {
 }
 
 nav a:hover {
-  background: #e7ccf9; /* soft purple on hover */
+  background: #e7ccf9;
   border-color: #b29dd9;
 }
 
-/* COMPUTER FRAME LAYOUT */
+/* COMPUTER WRAPPER */
 .computer-wrapper {
   position: relative;
+  max-width: 1000px; /* Adjust based on your image size */
   width: 90%;
-  max-width: 800px;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
+/* IMAGE */
 .computer-image {
   width: 100%;
-  display: block;
   height: auto;
+  display: block;
 }
 
+/* SCREEN OVERLAY — positioned over the screen of vint.png */
+/* You will very likely need to tweak these values after you see it in the browser */
 .screen-overlay {
   position: absolute;
-  top: 21%;    /* adjust to match your image */
-  left: 16%;   /* adjust to match your image */
-  width: 68%;  /* adjust to match your image */
-  height: 54%; /* adjust to match your image */
+  top: 22%;     /* vertical offset of screen on your image */
+  left: 15%;    /* horizontal offset */
+  width: 70%;   /* width of screen area */
+  height: 55%;  /* height of screen area */
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* TEXT INSIDE COMPUTER SCREEN */
+/* CONTENT INSIDE SCREEN */
 .screen-content {
-  background-color: rgba(255, 240, 245, 0.9); /* soft translucent lavender */
-  border: 2px solid #8a6fbf;
-  border-radius: 8px;
-  padding: 20px;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  font-family: 'Courier New', monospace;
+  background-color: rgba(255, 240, 245, 0.85);
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1.4rem;
   color: #2c003e;
   text-align: center;
-  box-shadow: inset 0 0 10px #b29dd9;
-}
-
-/* WIDGET IMAGES (if you use them) */
-img.widget {
-  max-width: 100%;
-  border: 2px solid #8a6fbf;
-  margin: 15px 0;
-  border-radius: 5px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-footer img {
-  width: 30px;
-  margin: 0 10px;
-  transition: transform 0.2s ease;
-}
-
-footer img:hover {
-  transform: scale(1.2);
+  box-shadow: inset 0 0 15px #b29dd9;
+  overflow: hidden; /* No scrolling */
 }
