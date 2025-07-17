@@ -117,15 +117,11 @@ img.widget {
 }
 
 .about-pic {
-  width: 250px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
-}
-
-.about-text {
-  text-align: center;
-  max-width: 600px;
+  width: 300px;      /* Controls image width */
+  height: auto;      /* Keeps aspect ratio */
+  display: block;    /* Makes margin auto work */
+  margin: 20px auto; /* Centers image horizontally with spacing */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
