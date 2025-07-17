@@ -4,17 +4,13 @@ body {
   color: #2c003e; /* dark purple text */
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
-/* Navbar */
 nav {
-  background: #f8b6d2; /* pink navbar */
+  background: #f8b6d2;
   padding: 10px;
   text-align: center;
-  width: 100%;
   box-shadow: 0 2px 5px #888;
 }
 
@@ -30,54 +26,48 @@ nav a {
 }
 
 nav a:hover {
-  background: #e7ccf9; /* soft purple on hover */
+  background: #e7ccf9;
   border-color: #b29dd9;
 }
 
-/* Main content window */
 .window {
   background: #ffffff;
   border: 4px ridge #b29dd9;
-  width: 90%;
-  max-width: 850px;
-  margin: 30px auto;
-  padding: 20px;
+  max-width: 750px;
+  min-height: 70vh;
+  margin: 40px auto;
+  padding: 30px;
   box-shadow: 5px 5px 8px #aaa;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.window h1, .window h2 {
-  margin-top: 0;
+.window h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-align: center;
   border-bottom: 2px dashed #8a6fbf;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   color: #8a6fbf;
 }
 
-/* Enlarged Computer Image */
+.window p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
 img.widget {
   max-width: 100%;
-  width: 500px;
-  height: auto;
   border: 2px solid #8a6fbf;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 5px;
 }
 
-/* Mini Icon (for example use) */
-.computer-icon {
-  width: 30px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-/* Footer */
 .footer-bar {
   text-align: center;
   font-size: 0.85em;
   margin-top: 40px;
   padding: 20px;
   color: #2c003e;
-  width: 100%;
 }
