@@ -4,29 +4,24 @@ body {
   color: #2c003e; /* dark purple text */
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 nav {
   background: #f8b6d2; /* pink navbar */
-  padding: 12px 0;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 2px 5px #888;
-  font-size: 1.1rem;
 }
 
 nav a {
   color: #2c003e;
-  background: #fff;
-  padding: 8px 16px;
-  margin: 0 8px;
+  background: #ffffff;
+  padding: 6px 12px;
+  margin: 0 5px;
   text-decoration: none;
   border: 2px solid #8a6fbf;
-  border-radius: 6px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -38,92 +33,38 @@ nav a:hover {
   background: #ffffff;
   border: 4px ridge #b29dd9;
   max-width: 750px;
-  margin: 40px auto;
-  padding: 30px 40px;
-  box-shadow:
-    6px 6px 15px rgba(0, 0, 0, 0.15),
-    inset 0 0 12px #d9b8ff;
-  border-radius: 12px;
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #2c003e;
-  line-height: 1.6;
-  user-select: text;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 5px 5px 8px #aaa;
+  border-radius: 10px;
+  text-align: center; /* center the content */
 }
 
 .window h1,
 .window h2 {
   margin-top: 0;
   border-bottom: 2px dashed #8a6fbf;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   color: #8a6fbf;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  position: relative;
-}
-
-/* Mini computer icon styling for inline SVG */
-.window h1 svg,
-.window h2 svg {
-  vertical-align: middle;
-  margin-right: 8px;
-  filter: drop-shadow(0 0 1px #b29dd9);
-  transition: filter 0.3s ease;
-}
-
-.window h1 svg:hover,
-.window h2 svg:hover {
-  filter: drop-shadow(0 0 6px #b29dd9);
-  cursor: default;
-}
-
-/* Blinking cursor effect on headings */
-.window h1::after,
-.window h2::after {
-  content: '|';
-  animation: blink 1s step-start 0s infinite;
-  color: #8a6fbf;
-  margin-left: 6px;
-  font-weight: bold;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
 }
 
 img.widget {
   max-width: 100%;
   border: 2px solid #8a6fbf;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(138, 111, 191, 0.3);
+  margin: 15px 0;
+  border-radius: 5px;
 }
 
-/* Code snippet style */
-.code-snippet {
-  background: #f3e8ff;
-  border-left: 4px solid #8a6fbf;
-  font-family: 'Courier New', monospace;
-  font-size: 1.1rem;
-  padding: 12px 20px;
-  margin: 20px 0;
-  white-space: pre-wrap;
-  border-radius: 6px;
-  color: #2c003e;
-  box-shadow: inset 0 0 8px #d3b3ff;
+img.mini-icon {
+  width: 96px;   /* 3x larger than before */
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .footer-bar {
   text-align: center;
-  font-size: 0.9em;
-  margin-top: 60px;
+  font-size: 0.85em;
+  margin-top: 40px;
   padding: 20px;
   color: #2c003e;
-  letter-spacing: 0.04em;
-  font-style: italic;
-  opacity: 0.8;
-  user-select: none;
 }
