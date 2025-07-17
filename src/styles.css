@@ -96,8 +96,8 @@ img.widget {
 }
 
 /* Mini computer icon style */
-.mini-computer-icon {
-  height: 35px;
+.mini-computer {
+  height: 60px;
   width: auto;
   border-radius: 8px;
 }
