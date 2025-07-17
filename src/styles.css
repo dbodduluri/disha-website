@@ -109,19 +109,3 @@ img.widget {
   font-weight: bold;
   color: #d6336c;
 }
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-.about-pic {
-  width: 300px;      /* Controls image width */
-  height: auto;      /* Keeps aspect ratio */
-  display: block;    /* Makes margin auto work */
-  margin: 20px auto; /* Centers image horizontally with spacing */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
