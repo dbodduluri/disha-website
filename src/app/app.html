@@ -1,19 +1,24 @@
-<nav>
-  <div class="nav-container">
-    <div class="nav-left">
-      <img src="assets/vintage-computer.png" alt="Computer Icon" class="nav-icon" />
-    </div>
+<nav class="navbar">
+  <!-- Left side: Computer icon -->
+  <div class="nav-left">
+    <img src="assets/vint.png" alt="Mini Computer" class="mini-computer-icon">
+    <a routerLink="">Home</a>
+    <a routerLink="about">About</a>
+    <a routerLink="experience">Experience & Projects</a>
+    <a routerLink="resume">Resume</a>
+    <a routerLink="contact">Contact</a>
+  </div>
 
-    <div class="nav-links">
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/experience">Experience & Projects</a>
-      <a routerLink="/resume">Resume</a>
-      <a routerLink="/contact">Contact</a>
-    </div>
-
-    <div class="nav-right">
-      <span class="stem-text">woman in STEM</span>
-    </div>
+  <!-- Right side: Woman in STEM text -->
+  <div class="nav-right">
+    <span class="stem-label">Woman in STEM</span>
   </div>
 </nav>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <a href="https://www.linkedin.com/in/dishabodduluri/" target="_blank" rel="noopener">
+    <img src="assets/icons/linkedin.png" alt="LinkedIn">
+  </a>
+</footer>
