@@ -57,17 +57,17 @@ nav a:hover {
   border-bottom: 2px dashed #8a6fbf;
   padding-bottom: 10px;
   color: #8a6fbf;
-  /* Adding a subtle glow animation to the h1 element */
-  animation: glow 2s infinite alternate;
+  /* Applying a subtle up-and-down animation to the h1 element */
+  animation: up-down 2s infinite alternate;
 }
 
-/* Defining the glow keyframes for the animation */
-@keyframes glow {
+/* Defining the keyframes for the up-and-down animation */
+@keyframes up-down {
   from {
-    text-shadow: 0 0 5px #8a6fbf;
+    transform: translateY(0);
   }
   to {
-    text-shadow: 0 0 20px #8a6fbf, 0 0 30px #8a6fbf;
+    transform: translateY(-5px); /* Moves the element up by 5 pixels */
   }
 }
 
