@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
   background-color: #fce4ec; /* Fallback color for the floral pattern */
 
-  font-family: 'Courier New', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #2c003e; /* dark purple text */
   margin: 0;
   padding: 0;
@@ -110,7 +110,7 @@ img.widget {
 
 /* Right side Woman in STEM label */
 .nav-right {
-  font-family: 'Courier New', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1rem;
   font-weight: bold;
   color: #d6336c;
