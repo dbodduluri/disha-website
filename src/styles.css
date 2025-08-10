@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 body {
   /* Updated background to a floral pattern */
   background-image: url('assets/pink_back.jpg');
@@ -6,7 +8,8 @@ body {
   background-attachment: fixed;
   background-color: #fce4ec; /* Fallback color for the floral pattern */
 
-  font-family: 'Roboto Mono', monospace;
+  /* Updated font to a modern, techy style */
+  font-family: 'Space Mono', monospace;
   color: #2c003e; /* dark purple text */
   margin: 0;
   padding: 0;
@@ -54,6 +57,18 @@ nav a:hover {
   border-bottom: 2px dashed #8a6fbf;
   padding-bottom: 10px;
   color: #8a6fbf;
+  /* Adding a subtle glow animation to the h1 element */
+  animation: glow 2s infinite alternate;
+}
+
+/* Defining the glow keyframes for the animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #8a6fbf;
+  }
+  to {
+    text-shadow: 0 0 20px #8a6fbf, 0 0 30px #8a6fbf;
+  }
 }
 
 .window p {
@@ -84,7 +99,8 @@ img.widget {
   align-items: center;
   padding: 10px 30px;
   background-color: #ffe0f0;
-  font-family: 'Poppins', sans-serif;
+  /* Updated font to match the body */
+  font-family: 'Space Mono', monospace;
 }
 
 /* Left section of navbar (image + links) */
@@ -110,7 +126,8 @@ img.widget {
 
 /* Right side Woman in STEM label */
 .nav-right {
-  font-family: 'Roboto Mono', monospace;
+  /* Updated font to match the body */
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   font-weight: bold;
   color: #d6336c;
