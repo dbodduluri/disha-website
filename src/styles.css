@@ -1,6 +1,6 @@
 body {
   /* Updated background to a floral pattern */
-  background-image: url('https://placehold.co/1920x1080/ffe4e1/6a0dad?text=Floral+Pattern');
+  background-image: url('assets/pink_back.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
