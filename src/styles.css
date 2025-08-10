@@ -58,7 +58,7 @@ nav a:hover {
   padding-bottom: 10px;
   color: #8a6fbf;
   /* Applying a subtle up-and-down animation to the h1 element */
-  animation: up-down 2s infinite alternate;
+  animation: up-down 1s infinite alternate;
 }
 
 /* Defining the keyframes for the up-and-down animation */
