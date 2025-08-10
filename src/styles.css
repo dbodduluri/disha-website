@@ -1,5 +1,11 @@
 body {
-  background-color: #fff0f5; /* light lavender background */
+  /* Updated background to a floral pattern */
+  background-image: url('https://placehold.co/1920x1080/ffe4e1/6a0dad?text=Floral+Pattern');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #fce4ec; /* Fallback color for the floral pattern */
+
   font-family: 'Courier New', monospace;
   color: #2c003e; /* dark purple text */
   margin: 0;
@@ -31,7 +37,7 @@ nav a:hover {
 }
 
 .window {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent background for readability */
   border: 4px ridge #b29dd9;
   max-width: 750px;
   margin: 40px auto;
